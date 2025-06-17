@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Supongo que las tarjetas tienen un id, entonces-->
+        <!--este id no será id del documento, pues entonces se repetirían-->
+        <EditText
+            android:id="@+id/etIdTarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID de Tarjeta"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etParaderoEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Paradero de Entrada"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etParaderoSalida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Paradero de Salida"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnRegistrarMovimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar Movimiento"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
