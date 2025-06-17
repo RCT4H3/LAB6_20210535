@@ -58,6 +58,11 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         auth = FirebaseAuth.getInstance();
 
+        if (auth.getCurrentUser() != null) {
+            startActivity(new Intent(MainActivity.this, GestionActivity.class));
+            finish();
+            return;
+        }
 
         tvIrRegistro = findViewById(R.id.tvIrRegistro);
 
